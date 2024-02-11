@@ -43,7 +43,7 @@
 (defconst cblx-db-model-definition
   '(("programs" . (:columns
 		   (list
-		    (:name id   :type --type-integer :pk t :autincrement t)
+		    (:name id   :type --type-integer :pk t :autoincrement t)
 		    (:name name :type --type-vchar20)
 		    (:name path :type --type-vchar500))
 		   :primary-keys (list (:name id))
