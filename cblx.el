@@ -243,8 +243,8 @@ _q_ go back to CBLX MENU
 
 (defun cblx-cmd-database-inteactive ()
   (interactive)
-  (sql-sqlite cblx-db-file)
-  )
+  (sql-sqlite cblx-db-file))
+  
 (defun cblx-cmd-program-status () 
   (interactive)
   (let ((buffer (get-buffer-create cblx-program-status-buffer)))
@@ -256,10 +256,8 @@ _q_ go back to CBLX MENU
 
 (defun cblx-cmd-program-analyse ()     
   (interactive)
-  ; (cblx-affiche-menu "Analyse ( with clean-up )")
-  (cblx-app-analyse cblx-program-buffer)
-  
-  )        
+  (cblx-app-analyse cblx-program-buffer))
+
 (defun cblx-cmd-program-erase ()     
   (interactive)
   (cblx-affiche-menu  "Clean up"))                        
